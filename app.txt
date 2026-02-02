@@ -1,3 +1,4 @@
 
 echo "what do you min"
 echo "wher are you dad"
+echo "i whant to be smart men"
