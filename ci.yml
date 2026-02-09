@@ -3,7 +3,7 @@ name: Simple CI
  on: 
    push
 
-jubs:
+jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
