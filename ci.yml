@@ -1,1 +1,13 @@
-echo "tell me what i am do naw"
+name: Simple CI
+ on: 
+   push:
+     branches:
+        - main
+
+
+jubs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo :CI is working!"
