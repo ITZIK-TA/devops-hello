@@ -6,8 +6,10 @@ name: Simple CI
 
 
 jubs:
-  test:
+  ci:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4 
+       
       - name: Say hello
-        run: echo :CI is working!"
+        run: test -f hello.sh
