@@ -1,10 +1,7 @@
-
-
-name: Simle CI 
-
+name: Simle CI
 on:
   push:
-    branches:
+      branches:
       - main
 jobs:
   ci:
