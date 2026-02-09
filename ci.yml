@@ -1,15 +1,12 @@
 name: Simple CI
- on: 
-   push:
-     branches:
-        - main
 
+ on: 
+   push
 
 jubs:
   ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4 
-       
-      - name: Say hello
+      - name: Check hello.sh exists
         run: test -f hello.sh
