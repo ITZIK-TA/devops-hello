@@ -15,4 +15,9 @@ jobs:
 
       - name: Run hello.sh
         run: bash hello.sh
-  
+     
+      - name: Check shebang exists
+        run: |
+          head -n 1 hello.sh | grep "^#!"       
+ 
+      
