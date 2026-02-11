@@ -1,4 +1,5 @@
 
 #!/bin/bash
-set -e 
-ech "hello from CI - run 2"
+ 
+echo "about to fail""
+exit 1
