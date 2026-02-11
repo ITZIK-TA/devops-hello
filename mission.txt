@@ -1,3 +1,3 @@
 
 echo "Git is under control"
-echo "Ready for CI/CD
+echo "Ready for CI/CD"
