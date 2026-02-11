@@ -1,13 +1,18 @@
-name: Simle CI
+name: Simple CI
 
 on:
   push:
-      branches:
-      - main
+    branches: [ "main" ]
+
 jobs:
   ci:
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v4
-      - name: Check hello.sh exists
-        run: test -f hello.sh
+
+      - name: Show hello.sh content
+        run: cat hello.sh
+
+      - name: Run hello.sh
+        run: bash hello.sh
+  
