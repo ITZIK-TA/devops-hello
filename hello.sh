@@ -1,5 +1,5 @@
 
 #!/bin/bash
  
-echo "about to fail""
+echo "about to fail again"
 exit 1
