@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo "hello from CI - run 2"
+ech "hello from CI - run 2"
