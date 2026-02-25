@@ -1,5 +1,5 @@
 
 #!/bin/bash
  
-echo "CI fixed"
+echo "hello from CI""
 
