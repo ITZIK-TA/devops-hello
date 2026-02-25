@@ -1,5 +1,5 @@
 
 #!/bin/bash
  
-echo "hello from CI""
+echo "hello from CI"
 
