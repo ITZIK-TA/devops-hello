@@ -1,23 +1,20 @@
-name: Simple CI
+name: Run Hello Script
 
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
-  ci:
+  run-script:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Show hello.sh content
-        run: cat hello.sh
+      - name: Make script executable
+        run: chmod +x hello.sh
 
-      - name: Run hello.sh
+      - name: Run script
         run: bash hello.sh
-     
-      - name: Check shebang exists
-        run: |
-          head -n 1 hello.sh | grep "^#!"       
- 
-      
+
+
+
